@@ -38,6 +38,7 @@ export const theme = extendTheme({
       variants: {
         solid: defineStyle({
           fontWeight: 500,
+          borderRadius: '0.5rem',
           bg: '#6966ff',
           color: '#fafafd',
           _hover: {
@@ -48,6 +49,7 @@ export const theme = extendTheme({
         }),
         secondary: defineStyle({
           bg: '#393953',
+          borderRadius: '0.5rem',
           color: '#fafafd',
           _hover: {
             bg: '#393953',
@@ -114,7 +116,7 @@ export const theme = extendTheme({
           tab: {
             fontSize: '1.063rem',
             fontWeight: 500,
-            borderRadius: '0.75rem',
+            borderRadius: '0.5rem',
             color: '#807e98',
             marginRight: '0.5rem',
             _hover: {
@@ -139,7 +141,7 @@ export const theme = extendTheme({
           tab: {
             fontSize: '1.063rem',
             fontWeight: 500,
-            borderRadius: '0.75rem',
+            borderRadius: '0.5rem',
             color: '#807e98',
             marginRight: '0.5rem',
             _hover: {
