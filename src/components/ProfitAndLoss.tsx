@@ -136,7 +136,7 @@ export function ProfitAndLoss() {
           </Tr>
           <Tr borderBottom="1px solid #2d2d3d" borderTop="1px solid #2d2d3d">
             <Td>
-              <Text as="strong">Net</Text>
+              <Text as="strong">Net Profit/Loss</Text>
             </Td>
             <Td isNumeric>
               <Text>13,896.06</Text>
