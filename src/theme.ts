@@ -135,6 +135,28 @@ export const theme = extendTheme({
             px: 0,
           },
         }),
+        menu: tabsParts({
+          tab: {
+            fontSize: '1.063rem',
+            fontWeight: 500,
+            borderRadius: '0.75rem',
+            color: '#807e98',
+            marginRight: '0.5rem',
+            _hover: {
+              color: '#fafafd',
+              backgroundColor: '#232334',
+            },
+            _selected: {
+              color: '#fafafd',
+              bg: '#151522',
+              _hover: {
+                color: '#fafafd',
+                bg: '#151522',
+                filter: 'brightness(1.1)',
+              },
+            },
+          },
+        }),
       },
     }),
   },

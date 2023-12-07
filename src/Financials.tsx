@@ -44,7 +44,7 @@ export function Financials() {
         <HStack as="header" spacing={4} mb={10} justifyContent="space-between">
           <Logo />
           <HStack>
-            <Tabs variant="soft-rounded">
+            <Tabs variant="menu">
               <TabList>
                 <Tab>Dashboard</Tab>
                 <Tab>Migrate</Tab>
