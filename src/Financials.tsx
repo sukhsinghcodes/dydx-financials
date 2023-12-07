@@ -6,6 +6,7 @@ import {
   Container,
   HStack,
   Heading,
+  Hide,
   IconButton,
   SimpleGrid,
   Stat,
@@ -44,15 +45,17 @@ export function Financials() {
         <HStack as="header" spacing={4} mb={10} justifyContent="space-between">
           <Logo />
           <HStack>
-            <Tabs variant="menu">
-              <TabList>
-                <Tab>Dashboard</Tab>
-                <Tab>Migrate</Tab>
-                <Tab>History</Tab>
-                <Tab>Forums</Tab>
-                <Tab>Trade</Tab>
-              </TabList>
-            </Tabs>
+            <Hide below="md">
+              <Tabs variant="menu">
+                <TabList>
+                  <Tab>Dashboard</Tab>
+                  <Tab>Migrate</Tab>
+                  <Tab>History</Tab>
+                  <Tab>Forums</Tab>
+                  <Tab>Trade</Tab>
+                </TabList>
+              </Tabs>
+            </Hide>
             <Button>Connect</Button>
           </HStack>
         </HStack>
@@ -83,7 +86,7 @@ export function Financials() {
             </TabList>
             <TabPanels>
               <TabPanel>
-                <SimpleGrid spacing={4} columns={2} mb={4}>
+                <SimpleGrid spacing={4} columns={[1, 1, 2]} mb={4}>
                   <Card>
                     <CardHeader>Totol Assets</CardHeader>
                     <CardBody>
@@ -107,7 +110,7 @@ export function Financials() {
                 </Card>
               </TabPanel>
               <TabPanel>
-                <SimpleGrid spacing={4} columns={3} mb={4}>
+                <SimpleGrid spacing={4} columns={[1, 1, 3]} mb={4}>
                   <Card>
                     <CardHeader>Totol Revenue</CardHeader>
                     <CardBody>
