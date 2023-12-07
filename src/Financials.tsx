@@ -88,7 +88,7 @@ export function Financials() {
               <TabPanel>
                 <SimpleGrid spacing={4} columns={[1, 1, 2]} mb={4}>
                   <Card>
-                    <CardHeader>Totol Assets</CardHeader>
+                    <CardHeader>Total Assets</CardHeader>
                     <CardBody>
                       <Stat>
                         <StatNumber>$13,896.06</StatNumber>
@@ -112,7 +112,7 @@ export function Financials() {
               <TabPanel>
                 <SimpleGrid spacing={4} columns={[1, 1, 3]} mb={4}>
                   <Card>
-                    <CardHeader>Totol Revenue</CardHeader>
+                    <CardHeader>Total Revenue</CardHeader>
                     <CardBody>
                       <Stat>
                         <StatNumber>$13,896.06</StatNumber>
