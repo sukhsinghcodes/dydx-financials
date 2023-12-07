@@ -66,11 +66,11 @@ export function Financials() {
             aria-label="Back"
             icon={<ArrowBackIcon />}
           />
-          <VStack alignItems="flex-start">
-            <Text as="small" color="#807e98">
+          <VStack alignItems="flex-start" spacing={0}>
+            <Text as="small" color="#807e98" m={0}>
               FINANCES
             </Text>
-            <Heading size="md" m={0}>
+            <Heading size="md" mb={1}>
               Financials
             </Heading>
             <Text color="#807e98">
