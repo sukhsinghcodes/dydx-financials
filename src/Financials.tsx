@@ -1,9 +1,12 @@
 import {
+  Button,
   Card,
   CardBody,
   CardHeader,
   Container,
+  HStack,
   Heading,
+  IconButton,
   SimpleGrid,
   Stat,
   StatNumber,
@@ -12,52 +15,132 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
+  Text,
   VStack,
 } from '@chakra-ui/react';
-import { BalanceSheet, ProfitAndLoss } from './components';
+import { BalanceSheet, Logo, ProfitAndLoss } from './components';
+import { ArrowBackIcon } from '@chakra-ui/icons';
 
 export function Financials() {
   return (
-    <Container maxW="6xl" py={4}>
-      <Heading size="md">Financials</Heading>
-      <VStack spacing={8} alignItems="stretch">
-        <SimpleGrid spacing={2} columns={2}>
-          <Card>
-            <CardHeader>Current APR</CardHeader>
-            <CardBody>
-              <Stat>
-                <StatNumber>0.00%</StatNumber>
-              </Stat>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardHeader>Pool Size</CardHeader>
-            <CardBody>
-              <Stat>
-                <StatNumber>2,180,099</StatNumber>
-              </Stat>
-            </CardBody>
-          </Card>
-        </SimpleGrid>
-        <Tabs variant="soft-rounded">
-          <TabList>
-            <Tab>Balance Sheet</Tab>
-            <Tab>Profit and Loss</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <Card>
-                <BalanceSheet />
-              </Card>
-            </TabPanel>
-            <TabPanel>
-              <Card>
-                <ProfitAndLoss />
-              </Card>
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </VStack>
-    </Container>
+    <>
+      <HStack
+        spacing={4}
+        mb={2}
+        justifyContent="center"
+        alignItems="center"
+        backgroundColor="#232334"
+        borderBottom="solid 1px #2d2d3d"
+        fontSize="0.8125rem"
+        color="#c8c7d8"
+        p={3}
+      >
+        <Text>
+          Interested in bridging your DYDX tokens from Ethereum to dYdX Chain?
+        </Text>
+        <Button size="sm">Migrate</Button>
+      </HStack>
+      <Container maxW="6xl" py={4}>
+        <HStack as="header" spacing={4} mb={10} justifyContent="space-between">
+          <Logo />
+          <HStack>
+            <Tabs variant="soft-rounded">
+              <TabList>
+                <Tab>Dashboard</Tab>
+                <Tab>Migrate</Tab>
+                <Tab>History</Tab>
+                <Tab>Forums</Tab>
+                <Tab>Trade</Tab>
+              </TabList>
+            </Tabs>
+            <Button>Connect</Button>
+          </HStack>
+        </HStack>
+        <HStack spacing={4} alignItems="center" mb={12}>
+          <IconButton
+            isRound
+            variant="secondary"
+            aria-label="Back"
+            icon={<ArrowBackIcon />}
+          />
+          <VStack alignItems="flex-start">
+            <Text as="small" color="#807e98">
+              FINANCES
+            </Text>
+            <Heading size="md" m={0}>
+              Financials
+            </Heading>
+            <Text color="#807e98">
+              Providing full transparency on all our finances
+            </Text>
+          </VStack>
+        </HStack>
+        <VStack spacing={4} alignItems="stretch">
+          <Tabs variant="soft-rounded">
+            <TabList>
+              <Tab>Balance Sheet</Tab>
+              <Tab>Profit and Loss</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <SimpleGrid spacing={4} columns={2} mb={4}>
+                  <Card>
+                    <CardHeader>Totol Assets</CardHeader>
+                    <CardBody>
+                      <Stat>
+                        <StatNumber>$13,896.06</StatNumber>
+                      </Stat>
+                    </CardBody>
+                  </Card>
+                  <Card>
+                    <CardHeader>Total Liabilities and Equity</CardHeader>
+                    <CardBody>
+                      <Stat>
+                        <StatNumber>$13,896.06</StatNumber>
+                      </Stat>
+                    </CardBody>
+                  </Card>
+                </SimpleGrid>
+
+                <Card>
+                  <BalanceSheet />
+                </Card>
+              </TabPanel>
+              <TabPanel>
+                <SimpleGrid spacing={4} columns={3} mb={4}>
+                  <Card>
+                    <CardHeader>Totol Revenue</CardHeader>
+                    <CardBody>
+                      <Stat>
+                        <StatNumber>$13,896.06</StatNumber>
+                      </Stat>
+                    </CardBody>
+                  </Card>
+                  <Card>
+                    <CardHeader>Total Expenses</CardHeader>
+                    <CardBody>
+                      <Stat>
+                        <StatNumber>$13,896.06</StatNumber>
+                      </Stat>
+                    </CardBody>
+                  </Card>
+                  <Card>
+                    <CardHeader>Net Profit/Loss</CardHeader>
+                    <CardBody>
+                      <Stat>
+                        <StatNumber>$13,896.06</StatNumber>
+                      </Stat>
+                    </CardBody>
+                  </Card>
+                </SimpleGrid>
+                <Card>
+                  <ProfitAndLoss />
+                </Card>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+        </VStack>
+      </Container>
+    </>
   );
 }

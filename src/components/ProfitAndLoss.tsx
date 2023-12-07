@@ -31,7 +31,7 @@ export function ProfitAndLoss() {
             <Td />
             <Td />
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Products</Text>
             </Td>
@@ -42,7 +42,7 @@ export function ProfitAndLoss() {
               <Text>13,896.06</Text>
             </Td>
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Services</Text>
             </Td>
@@ -54,7 +54,7 @@ export function ProfitAndLoss() {
             </Td>
           </Tr>
 
-          <Tr borderBottom="1px solid #ccc" borderTop="1px solid #ccc">
+          <Tr borderBottom="1px solid #2d2d3d" borderTop="1px solid #2d2d3d">
             <Td>
               <Text as="strong">Total Revenue</Text>
             </Td>
@@ -74,7 +74,7 @@ export function ProfitAndLoss() {
             <Td />
             <Td />
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Salaries</Text>
             </Td>
@@ -85,7 +85,7 @@ export function ProfitAndLoss() {
               <Text>13,896.06</Text>
             </Td>
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Server Costs</Text>
             </Td>
@@ -97,7 +97,7 @@ export function ProfitAndLoss() {
             </Td>
           </Tr>
 
-          <Tr borderBottom="1px solid #ccc" borderTop="1px solid #ccc">
+          <Tr borderBottom="1px solid #2d2d3d" borderTop="1px solid #2d2d3d">
             <Td>
               <Text as="strong">Total Expenses</Text>
             </Td>
@@ -134,7 +134,7 @@ export function ProfitAndLoss() {
               <Text>13,896.06</Text>
             </Td>
           </Tr>
-          <Tr borderBottom="1px solid #ccc" borderTop="1px solid #ccc">
+          <Tr borderBottom="1px solid #2d2d3d" borderTop="1px solid #2d2d3d">
             <Td>
               <Text as="strong">Net</Text>
             </Td>

@@ -34,6 +34,29 @@ export const theme = extendTheme({
     },
   },
   components: {
+    Button: defineStyleConfig({
+      variants: {
+        solid: defineStyle({
+          fontWeight: 500,
+          bg: '#6966ff',
+          color: '#fafafd',
+          _hover: {
+            bg: '#6966ff',
+            color: '#fafafd',
+            filter: 'brightness(1.1)',
+          },
+        }),
+        secondary: defineStyle({
+          bg: '#393953',
+          color: '#fafafd',
+          _hover: {
+            bg: '#393953',
+            color: '#fafafd',
+            filter: 'brightness(1.1)',
+          },
+        }),
+      },
+    }),
     Card: cardConfig({
       baseStyle: cardParts({
         container: {
@@ -89,14 +112,23 @@ export const theme = extendTheme({
       variants: {
         'soft-rounded': tabsParts({
           tab: {
+            fontSize: '1.063rem',
             fontWeight: 500,
             borderRadius: '0.75rem',
-            bg: '#232334',
-            color: '#c8c7d8',
+            color: '#807e98',
             marginRight: '0.5rem',
+            _hover: {
+              color: '#fafafd',
+              backgroundColor: '#232334',
+            },
             _selected: {
               color: '#fafafd',
               bg: '#393953',
+              _hover: {
+                color: '#fafafd',
+                bg: '#393953',
+                filter: 'brightness(1.1)',
+              },
             },
           },
           tabpanel: {

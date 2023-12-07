@@ -31,7 +31,7 @@ export function BalanceSheet() {
             <Td />
             <Td />
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Cash and Cash Equivalents</Text>
             </Td>
@@ -42,7 +42,7 @@ export function BalanceSheet() {
               <Text>13,896.06</Text>
             </Td>
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Current Assets</Text>
             </Td>
@@ -53,7 +53,7 @@ export function BalanceSheet() {
               <Text>13,896.06</Text>
             </Td>
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Property, Plant and Equipment</Text>
             </Td>
@@ -64,7 +64,7 @@ export function BalanceSheet() {
               <Text>13,896.06</Text>
             </Td>
           </Tr>
-          <Tr borderBottom="1px solid #ccc" borderTop="1px solid #ccc">
+          <Tr borderBottom="1px solid #2d2d3d" borderTop="1px solid #2d2d3d">
             <Td>
               <Text as="strong">Total Assets</Text>
             </Td>
@@ -84,7 +84,7 @@ export function BalanceSheet() {
             <Td />
             <Td />
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Liabilities</Text>
             </Td>
@@ -95,7 +95,7 @@ export function BalanceSheet() {
               <Text>13,896.06</Text>
             </Td>
           </Tr>
-          <Tr>
+          <Tr color="#807e98">
             <Td pl={12}>
               <Text>Equities</Text>
             </Td>
@@ -107,7 +107,7 @@ export function BalanceSheet() {
             </Td>
           </Tr>
 
-          <Tr borderBottom="1px solid #ccc" borderTop="1px solid #ccc">
+          <Tr borderBottom="1px solid #2d2d3d" borderTop="1px solid #2d2d3d">
             <Td>
               <Text as="strong">Total Liabilities and Equity</Text>
             </Td>
